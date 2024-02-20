@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player Interface</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="f.png" type="image/x-icon">
+</head>
+<body>
+
+<div id="music-player" class="player">
+  <audio id="audio-element">
+      <source src="Agar Tu Hota%20-%20Baaghi%20(Ankit%20Tiwari)%20190Kbps_1463497576656.mp3" type="audio/mpeg">
+      <source src="Ae Dil Hai%20Mushkil%20-%20Title%20Song%20(Arijit%20Singh)%20190kbps_1473830790817.mp3" type="audio/mpeg">
+      <source src="Beparwah+(Baby).mp3" type="audio/mpeg">
+      
+  </audio>
+  <div class="controls">
+      <button id="play-pause" onclick="togglePlayPause()">Play</button>
+      <button id="prev" onclick="playPreviousTrack()">Prev</button>
+      <button id="next" onclick="playNextTrack()">Next</button>
+  </div>
+  <div class="progress-bar">
+      <div id="progress" class="progress"></div>
+  </div>
+  <div class="playlist">
+      <ul id="playlist">
+          <li onclick="changeTrack('Ae Dil Hai%20Mushkil%20-%20Title%20Song%20(Arijit%20Singh)%20190kbps_1473830790817.mp3', this)">First Song Title</li>
+          <li onclick="changeTrack('Ae Dil Hai%20Mushkil%20-%20Title%20Song%20(Arijit%20Singh)%20190kbps_1473830790817.mp3', this)">Second Song Title</li>
+          <li onclick="changeTrack('path-to-your-third-song.mp3', this)">Third Song Title</li>
+          <!-- More songs can be added here -->
+      </ul>
+  </div>
+</div>
+
+<script src="log.js"></script>
+</body>
+</html>
